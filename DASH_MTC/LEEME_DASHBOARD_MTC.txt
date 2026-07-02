@@ -1,0 +1,12 @@
+Dashboard MTC
+
+1. El archivo fuente es E:\REPORTE_MTC.xlsx.
+2. Para actualizar una sola vez y abrir el tablero, ejecuta:
+   ACTUALIZAR_DASHBOARD_MTC.bat
+3. Para que el tablero se regenere cada vez que guardes el Excel, ejecuta:
+   INICIAR_DASHBOARD_MTC_AUTOMATICO.bat
+4. Deja abierta la ventana de PowerShell del modo automatico mientras estes trabajando.
+5. El tablero generado es:
+   dashboard_mtc.html
+
+Puedes modificar el Excel normalmente. Al guardar, el script vuelve a leer las hojas y reemplaza el HTML con los datos nuevos.
