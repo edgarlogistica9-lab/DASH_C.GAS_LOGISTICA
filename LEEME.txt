@@ -1,0 +1,36 @@
+DASHBOARD PORTABLE - ENVIOS ARCHIVO GENERAL.xlsm
+
+USO RAPIDO
+1. Deja todos estos archivos juntos en una sola carpeta.
+2. Da doble clic en DASHBOARD_PORTABLE.bat.
+3. El dashboard se abre y queda vigilando ENVIOS ARCHIVO GENERAL.xlsm.
+4. Cuando guardes cambios en Excel, dashboard.html se regenera automaticamente.
+5. El dashboard se regenera cuando guardes cambios en ENVIOS ARCHIVO GENERAL.xlsm.
+6. En el dashboard puedes filtrar por rango de fechas usando Desde y Hasta.
+7. Puedes buscar por numero de ticket/factura usando el campo Ticket/factura.
+
+USO MANUAL
+Tambien puedes dar doble clic en ACTUALIZAR_DASHBOARD.bat para actualizar una sola vez y abrir el dashboard.
+
+MODO PORTABLE
+Puedes copiar toda la carpeta a otra ubicacion, disco externo o USB. No depende de una ruta fija; los archivos se buscan siempre en la misma carpeta donde estan los .bat.
+
+Archivos:
+- DASHBOARD_PORTABLE.bat: abre el dashboard y vigila cambios del Excel.
+- dashboard_portable.ps1: modo vigilancia portable.
+- ACTUALIZAR_DASHBOARD.bat: actualiza una sola vez y abre el dashboard.
+- actualizar_dashboard.ps1: lee ENVIOS ARCHIVO GENERAL.xlsm y genera dashboard.html.
+- dashboard.html: se crea automaticamente con los datos actualizados.
+
+Notas:
+- No modifica ENVIOS ARCHIVO GENERAL.xlsm.
+- Si el Excel esta abierto, el script intenta leer una copia temporal del archivo.
+- Para actualizacion permanente, usa DASHBOARD_PORTABLE.bat y deja abierta esa ventana; al guardar cambios en Excel se regenera el dashboard. Si ya tienes la pagina abierta, actualizala cuando quieras ver el cambio.
+- Las celdas vacias o con S/N de operador, cliente o localidad se muestran como SIN ESPECIFICAR en el dashboard.
+- El mapa es local y portable; posiciona las localidades por referencia aproximada/deterministica dentro del Estado de Mexico para visualizar concentracion.
+- En el mapa cada municipio/region tiene un color diferente; las localidades conservan su color propio y el tamano de la burbuja representa la cantidad de entregas.
+- En la grafica Pedidos e importe por mes cada mes tiene un color propio y se actualiza con los registros mensuales disponibles.
+- En la grafica Pedidos por chofer cada chofer tiene un color propio y se muestra su leyenda.
+- El indicador Clientes cuenta clientes unicos y cambia con los filtros de mes, chofer, localidad y rango de fechas.
+- El apartado Pedidos diarios por localidad resume fecha, localidad, pedidos e importe.
+- Si mueves la carpeta, mueve tambien ENVIOS ARCHIVO GENERAL.xlsm junto con los .bat y .ps1.
